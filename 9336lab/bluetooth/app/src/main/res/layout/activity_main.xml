@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bluetooth.MainActivity">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id = "@+id/status"
+        android:hint="Check BlueTooth Status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text1"
+
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/discover"
+        android:layout_centerHorizontal="true"
+        android:hint="Discover Neighbourhood"
+        android:layout_marginTop="100dp" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="         message        "
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="send"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="250dp"
+        android:id="@+id/send" />
+
+
+    />
+
+    <ListView
+        android:layout_marginTop="270dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id= "@+id/listview"
+        ></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:layout_below="@+id/discover"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

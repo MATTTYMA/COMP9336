@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dualtone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a9336_assignment.DualTone">
+
+
+    <Button
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/one_dt"
+        android:layout_toRightOf="@+id/one_dt"
+        android:layout_toEndOf="@+id/one_dt"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:id="@+id/two_dt" />
+
+    <Button
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="36dp"
+        android:id="@+id/one_dt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/two_dt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/three_dt" />
+
+    <Button
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/one_dt"
+        android:layout_alignLeft="@+id/one_dt"
+        android:layout_alignStart="@+id/one_dt"
+        android:layout_marginTop="16dp"
+        android:id="@+id/four_dt" />
+
+    <Button
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/four_dt"
+        android:layout_alignLeft="@+id/two_dt"
+        android:layout_alignStart="@+id/two_dt"
+        android:id="@+id/five_dt" />
+
+    <Button
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/five_dt"
+        android:layout_alignLeft="@+id/three_dt"
+        android:layout_alignStart="@+id/three_dt"
+        android:id="@+id/six_dt" />
+
+    <Button
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four_dt"
+        android:layout_alignLeft="@+id/four_dt"
+        android:layout_alignStart="@+id/four_dt"
+        android:layout_marginTop="19dp"
+        android:id="@+id/seven_dt" />
+
+    <Button
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seven_dt"
+        android:layout_alignLeft="@+id/five_dt"
+        android:layout_alignStart="@+id/five_dt"
+        android:id="@+id/eight_dt" />
+
+    <Button
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/eight_dt"
+        android:layout_alignLeft="@+id/six_dt"
+        android:layout_alignStart="@+id/six_dt"
+        android:id="@+id/nine_dt" />
+
+    <Button
+        android:text="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/nine_dt"
+        android:layout_alignEnd="@+id/nine_dt"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/stop_dt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/seven_dt"
+        android:layout_toLeftOf="@+id/nine_dt"
+        android:layout_toStartOf="@+id/nine_dt"
+        android:layout_marginTop="33dp"
+        android:id="@+id/edit_freq1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edit_freq1"
+        android:layout_alignRight="@+id/edit_freq1"
+        android:layout_alignEnd="@+id/edit_freq1"
+        android:layout_marginTop="33dp"
+        android:id="@+id/edit_freq2" />
+
+    <Button
+        android:text="tone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_freq1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="27dp"
+        android:id="@+id/play_dt" />
+
+    <TextView
+        android:text="Dual Tone Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edit_freq1"
+        android:layout_alignStart="@+id/edit_freq1"
+        android:id="@+id/dt_display" />
+</RelativeLayout>
